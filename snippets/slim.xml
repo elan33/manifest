@@ -56,10 +56,11 @@
   <project path="system/netd" name="SlimRoms/android_system_netd" />
   <project path="system/security" name="SlimRoms/android_system_security" />
   <project path="system/vold" name="SlimRoms/android_system_vold" />
-  <!-- Slim Additions -->
+ 
   <project path="external/exfat" name="SlimRoms/android_external_exfat" />
   <project path="external/ffmpeg" name="SlimRoms/android_external_ffmpeg" />
   <project path="external/fuse" name="SlimRoms/android_external_fuse" />
+  <project path="external/json-c" name="SlimRoms/android_external_json-c" />
   <project path="external/stagefright-plugins" name="SlimRoms/android_external_stagefright-plugins" />
   <project path="external/ntfs-3g" name="SlimRoms/android_external_ntfs-3g" />
   <project path="packages/apps/SamsungServiceMode" name="SlimRoms/packages_apps_SamsungServiceMode" />
