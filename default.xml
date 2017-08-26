@@ -14,7 +14,17 @@
            sync-c="true"
            sync-j="4" />
 
-  <project path="build/make" name="platform/build" groups="pdk" >
+  <!-- Tracked AquariOS repos -->
+  <project path="build/make" name="build" groups="pdk,tradefed" remote="aqua" />
+  <project path="frameworks/base" name="frameworks_base" remote="aqua" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="aqua" />
+
+  <!-- AquariOS Nexus devices -->
+    <!--angler -->
+  <project path="device/huawei/angler" name="device_huawei_angler" remote="aqua" />
+  <project path="kernel/huawei/angler" name="kernel_huawei_angler" remote="aqua" />
+
+  <!-- AOSP Repo's -->
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -341,7 +351,6 @@
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk" />
   <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
-  <project path="frameworks/base" name="platform/frameworks/base" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -455,7 +464,6 @@
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" groups="pdk-fs" />
   <project path="packages/apps/RetailDemo" name="platform/packages/apps/RetailDemo" groups="pdk-fs" />
   <project path="packages/apps/SafetyRegulatoryInfo" name="platform/packages/apps/SafetyRegulatoryInfo" groups="pdk-fs" />
-  <project path="packages/apps/Settings" name="platform/packages/apps/Settings" groups="pdk-fs" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" groups="pdk-fs" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" groups="pdk-fs" />
   <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" groups="pdk-fs" />
