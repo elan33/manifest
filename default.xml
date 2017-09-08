@@ -16,6 +16,7 @@
 
   <!-- Tracked AquariOS repos -->
   <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="aqua" />
+  <project path="build/kati" name="build_kati" groups="pdk,tradefed" remote="aqua" />
   <project path="build/make" name="build" groups="pdk,tradefed" remote="aqua" />
   <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="aqua" />
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="aqua" />
@@ -30,6 +31,9 @@
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="aqua" />
   <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" remote="aqua"
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="aqua" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="aqua" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="aqua" />
+  <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="aqua" /> 
   <project path="system/core" name="system_core" remote="aqua" />
   <project path="system/sepolicy" name="system_sepolicy" remote="aqua" />
   <project path="vendor/aquarios" name="vendor_aquarios" remote="aqua" />
@@ -39,6 +43,10 @@
   <project path="device/huawei/angler" name="device_huawei_angler" remote="aqua" />
   <project path="kernel/huawei/angler" name="kernel_huawei_angler" remote="aqua" />
   <project path="vendor/huawei/angler" name="proprietary_vendor_huawei" remote="aqua" />
+    <!-- bullhead -->
+  <project path="device/lge/bullhead" name="device_lge_bullhead" remote="aqua" />
+  <project path="kernel/lge/bullhead" name="kernel_lge_bullhead" remote="aqua" />
+  <project path="vendor/lge" name="proprietary_vendor_lge" remote="aqua" />
 
   <!-- AOSP Repo's -->
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -50,7 +58,6 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
-  <project path="build/kati" name="platform/build/kati" groups="pdk,tradefed" />
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
@@ -517,8 +524,6 @@
   <project path="packages/services/Car" name="platform/packages/services/Car" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/services/Mms" name="platform/packages/services/Mms" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/services/NetworkRecommendation" name="platform/packages/services/NetworkRecommendation" groups="pdk-fs" />
-  <project path="packages/services/Telecomm" name="platform/packages/services/Telecomm" groups="pdk-cw-fs,pdk-fs" />
-  <project path="packages/services/Telephony" name="platform/packages/services/Telephony" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" groups="pdk-fs" />
   <project path="pdk" name="platform/pdk" groups="pdk" />
   <project path="platform_testing" name="platform/platform_testing" groups="pdk-fs,pdk-cw-fs,cts" />
