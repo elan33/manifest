@@ -31,9 +31,9 @@
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="aqua" />
   <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" remote="aqua"
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="aqua" />
+  <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="aqua" /> 
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="aqua" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="aqua" />
-  <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="aqua" /> 
   <project path="system/core" name="system_core" remote="aqua" />
   <project path="system/sepolicy" name="system_sepolicy" remote="aqua" />
   <project path="vendor/aquarios" name="vendor_aquarios" remote="aqua" />
