@@ -8,7 +8,7 @@
            review="android-review.googlesource.com" />
   <remote  name="aqua"
            revision="a8.0.0"
-           fetch="https://github.com/aquarios/" />
+           fetch="git+ssh://git@github.com/AquariOS" />
   <default revision="refs/tags/android-8.0.0_r4"
            remote="aosp"
            sync-c="true"
@@ -16,9 +16,15 @@
 
   <!-- Tracked AquariOS repos -->
   <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="aqua" />
-  <project path="build/kati" name="build_kati" groups="pdk,tradefed" remote="aqua" />
   <project path="build/make" name="build" groups="pdk,tradefed" remote="aqua" />
-  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="aqua" />
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="aqua" />
   <project path="frameworks/base" name="frameworks_base" remote="aqua" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="aqua" />
@@ -29,7 +35,7 @@
   <project path="packages/apps/Dialer" name="packages_apps_Dialer" groups="pdk-fs" remote="aqua" />
   <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" remote="aqua" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="aqua" />
-  <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" remote="aqua"
+  <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" remote="aqua" />
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="aqua" />
   <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="aqua" /> 
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="aqua" />
@@ -49,14 +55,6 @@
   <project path="vendor/lge" name="proprietary_vendor_lge" remote="aqua" />
 
   <!-- AOSP Repo's -->
-    <copyfile src="core/root.mk" dest="Makefile" />
-    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-    <linkfile src="core" dest="build/core" />
-    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-    <linkfile src="target" dest="build/target" />
-    <linkfile src="tools" dest="build/tools" />
-  </project>
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
