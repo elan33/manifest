@@ -48,6 +48,7 @@
   <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="aqua" />
   <project path="system/core" name="system_core" remote="aqua" />
   <project path="system/sepolicy" name="system_sepolicy" remote="aqua" />
+  <project path="system/vold" name="system_vold" groups="pdk" remote="aqua" />
   <project path="vendor/aquarios" name="vendor_aquarios" remote="aqua" />
 
   <!-- AquariOS Nexus devices -->
@@ -540,7 +541,6 @@
   <project path="system/tools/hidl" name="platform/system/tools/hidl" groups="pdk" />
   <project path="system/tpm" name="platform/system/tpm" />
   <project path="system/update_engine" name="platform/system/update_engine" groups="pdk" />
-  <project path="system/vold" name="platform/system/vold" groups="pdk" />
   <project path="test/vts" name="platform/test/vts" groups="vts,pdk" />
   <project path="test/vts-testcase/fuzz" name="platform/test/vts-testcase/fuzz" groups="vts,pdk" />
   <project path="test/vts-testcase/hal" name="platform/test/vts-testcase/hal" groups="vts,pdk" />
