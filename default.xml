@@ -17,6 +17,7 @@
   <!-- Tracked AquariOS repos -->
   <project path="bionic" name="bionic" groups="pdk" remote="aqua" />
   <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="aqua" />
+  <project path="build/kati" name="build_kati" groups="pdk,tradefed" remote="aqua" />
   <project path="build/make" name="build" groups="pdk,tradefed" remote="aqua" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
