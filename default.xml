@@ -15,8 +15,9 @@
            sync-j="4" />
 
   <!-- Tracked AquariOS repos -->
+  <project path="bionic" name="bionic" groups="pdk" remote="aqua" />
   <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="aqua" />
-  <project path="build/make" name="build" groups="pdk,tradefed" remote="aqua" />
+  <project path="build/make" name="build" groups="pdk,tradefed" remote="aqua" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -24,7 +25,11 @@
     <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
-  </project>
+    </project>
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="aqua" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+    </project>
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="aqua" />
   <project path="frameworks/base" name="frameworks_base" remote="aqua" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="aqua" />
@@ -56,11 +61,7 @@
 
   <!-- AOSP Repo's -->
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
-    <linkfile src="root.bp" dest="Android.bp" />
-    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-  </project>
   <project path="art" name="platform/art" groups="pdk" />
-  <project path="bionic" name="platform/bionic" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
   <project path="developers/build" name="platform/developers/build" />
