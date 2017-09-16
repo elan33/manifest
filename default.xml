@@ -9,7 +9,7 @@
   <remote  name="aqua"
            revision="a8.0.0"
            fetch="git+ssh://git@github.com/AquariOS" />
-  <default revision="refs/tags/android-8.0.0_r4"
+  <default revision="refs/tags/android-8.0.0_r11"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
@@ -47,6 +47,7 @@
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="aqua" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="aqua" />
   <project path="system/core" name="system_core" remote="aqua" />
+  <project path="system/extras" name="system_extras" remote="aqua" />
   <project path="system/sepolicy" name="system_sepolicy" remote="aqua" />
   <project path="system/vold" name="system_vold" groups="pdk" remote="aqua" />
   <project path="vendor/aquarios" name="vendor_aquarios" remote="aqua" />
@@ -522,7 +523,6 @@
   <project path="system/connectivity/wificond" name="platform/system/connectivity/wificond" groups="pdk" />
   <project path="system/connectivity/wifilogd" name="platform/system/connectivity/wifilogd" groups="pdk" />
   <project path="system/chre" name="platform/system/chre" groups="pdk" />
-  <project path="system/extras" name="platform/system/extras" groups="pdk" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" />
   <project path="system/hardware/interfaces" name="platform/system/hardware/interfaces" groups="pdk" />
   <project path="system/hwservicemanager" name="platform/system/hwservicemanager" groups="pdk" />
