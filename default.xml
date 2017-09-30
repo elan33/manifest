@@ -442,6 +442,5 @@
   <include name="snippets/aquarios.xml" />
   <include name="snippets/devices.xml" />
   <include name="snippets/hals.xml" />
-  <include name="snippets/prebuilts.xml" />
   <include name="snippets/slim.xml" />
 </manifest>
