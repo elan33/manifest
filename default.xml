@@ -62,6 +62,10 @@
   <project path="device/lge/bullhead" name="device_lge_bullhead" remote="aqua" />
   <project path="kernel/lge/bullhead" name="kernel_lge_bullhead" remote="aqua" />
   <project path="vendor/lge" name="proprietary_vendor_lge" remote="aqua" />
+    <!-- marlin -->
+  <project path="device/google/marlin" name="device_google_marlin" remote="aqua" />
+  <project path="kernel/google/marlin" name="kernel_google_marlin" remote="aqua" />
+  <project path="vendor/google" name="proprietary_vendor_google" remote="aqua" />
 
   <!-- AOSP Repo's -->
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
