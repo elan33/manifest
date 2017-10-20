@@ -526,4 +526,6 @@
   <!-- GZOSP CAF manifest -->
   <include name="caf_default.xml" />
 
+  <!-- AquariOS -->
+  <include name="aquarios_default.xml" />
 </manifest>

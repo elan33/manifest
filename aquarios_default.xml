@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="aqua"
+           fetch="https://github.com/AquariOS"
+           revision="a8.0.0-caf" />
+
+  <!-- AquariOS -->
+  <project path="manifest" name="manifest" remote="aqua" />
+  <project path="build/make" name="build" remote="aqua" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="aqua" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="bionic" name="bionic" groups="pdk" remote="aqua" />
+  <project path="device/aquarios/sepolicy" name="device_aquarios_sepolicy" remote="aqua" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="aqua" />
+  <project path="frameworks/base" name="frameworks_base" remote="aqua" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="aqua" />
+  <project path="vendor/aquarios" name="vendor_aquarios" remote="aqua" />
+
+</manifest>
