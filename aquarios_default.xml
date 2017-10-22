@@ -6,7 +6,7 @@
            revision="a8.0.0-caf" />
 
   <!-- AquariOS -->
-  <project path="manifest" name="manifest" remote="aqua" />
+ <project path="bionic" name="bionic" groups="pdk" remote="aqua" />
   <project path="build/make" name="build" remote="aqua" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -20,11 +20,12 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="bionic" name="bionic" groups="pdk" remote="aqua" />
   <project path="device/aquarios/sepolicy" name="device_aquarios_sepolicy" remote="aqua" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="aqua" />
   <project path="frameworks/base" name="frameworks_base" remote="aqua" />
+  <project path="manifest" name="manifest" remote="aqua" />
+  <project path="packages/apps/CoralReef" name="CoralReef" remote="aqua" revision="a8.0.0" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="aqua" />
+  <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="aqua" revision="a8.0.0"  />
   <project path="vendor/aquarios" name="vendor_aquarios" remote="aqua" />
-
 </manifest>
