@@ -9,7 +9,7 @@
   <remote  name="aqua"
            revision="a8.0.0"
            fetch="git+ssh://git@github.com/AquariOS" />
-  <default revision="refs/tags/android-8.0.0_r11"
+  <default revision="refs/tags/android-8.0.0_r31"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
