@@ -23,6 +23,7 @@
   <project path="device/aquarios/sepolicy" name="device_aquarios_sepolicy" remote="aqua" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="aqua" />
   <project path="frameworks/base" name="frameworks_base" remote="aqua" />
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="aqua" />
   <project path="manifest" name="manifest" remote="aqua" />
   <project path="packages/apps/CoralReef" name="CoralReef" remote="aqua" revision="a8.0.0" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="aqua" />
