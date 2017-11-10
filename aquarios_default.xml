@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="aqua"
-           fetch="https://github.com/AquariOS"
+           fetch="git+ssh://git@github.com/AquariOS"
            revision="a8.0.0-caf" />
 
   <!-- AquariOS -->
