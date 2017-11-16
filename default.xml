@@ -40,6 +40,7 @@
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" groups="pdk-fs" remote="aqua" />
   <project path="packages/apps/CoralReef" name="CoralReef" remote="aqua" />
   <project path="packages/apps/Dialer" name="packages_apps_Dialer" groups="pdk-fs" remote="aqua" />
+  <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="aqua" />
   <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" remote="aqua" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="aqua" />
   <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" remote="aqua" />
