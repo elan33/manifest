@@ -25,7 +25,7 @@
   <project path="frameworks/base" name="frameworks_base" remote="aqua" />
   <project path="hardware/libhardware" name="hardware_libhardware" remote="aqua" />
   <project path="manifest" name="manifest" remote="aqua" />
-  <project path="packages/apps/CoralReef" name="CoralReef" remote="aqua" revision="a8.0.0" />
+  <project path="packages/apps/CoralReef" name="CoralReef" remote="aqua" />
   <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="aqua" revision="a8.0.0" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="aqua" />
   <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="aqua" revision="a8.0.0"  />
