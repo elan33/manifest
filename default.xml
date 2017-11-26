@@ -31,6 +31,7 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
     </project>
+  <project path="external/DUtils" name="external_DUtils" remote="aqua" />
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="aqua" />
   <project path="frameworks/base" name="frameworks_base" remote="aqua" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="aqua" />
@@ -40,6 +41,7 @@
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" groups="pdk-fs" remote="aqua" />
   <project path="packages/apps/CoralReef" name="CoralReef" remote="aqua" />
   <project path="packages/apps/Dialer" name="packages_apps_Dialer" groups="pdk-fs" remote="aqua" />
+  <project path="packages/apps/DUI" name="packages_apps_DUI" remote="aqua" />
   <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="aqua" />
   <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" remote="aqua" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="aqua" />
