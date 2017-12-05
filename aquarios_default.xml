@@ -30,6 +30,7 @@
   <project path="packages/apps/DUI" name="packages_apps_DUI" remote="aqua" revision="a8.0.0" />
   <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="aqua" revision="a8.0.0" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="aqua" />
-  <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="aqua" revision="a8.0.0"  />
+  <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="aqua" revision="a8.0.0" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="aqua" />
   <project path="vendor/aquarios" name="vendor_aquarios" remote="aqua" />
 </manifest>
