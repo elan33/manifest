@@ -10,7 +10,7 @@
            fetch="git+ssh://git@github.com/AquariOS" />
   <remote  name="aqua-caf"
            fetch="git+ssh://git@github.com/Aqua-CAF" />
-  <default revision="refs/tags/android-8.1.0_r1"
+  <default revision="refs/tags/android-8.1.0_r7"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
