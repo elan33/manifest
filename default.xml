@@ -36,6 +36,7 @@
   <project path="frameworks/av" name="frameworks_av" remote="aqua" revision="a8.1.0-caf" />
   <project path="frameworks/base" name="frameworks_base" remote="aqua" revision="a8.1.0-caf" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="aqua" revision="a8.1.0-caf" />
+  <project path="frameworks/opt/net/ims" name="platform/frameworks_opt_net_ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" remote="aqua" revision="a8.1.0-caf" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="aqua" revision="a8.1.0-caf" />
   <!--project path="manifest" name="manifest" remote="aqua" revision="a8.1.0-caf" /-->
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" groups="pdk-fs" remote="aqua" revision="a8.1.0-caf" />
@@ -403,7 +404,6 @@
   <project path="frameworks/opt/inputconnectioncommon" name="platform/frameworks/opt/inputconnectioncommon" groups="pdk-fs" />
   <project path="frameworks/opt/inputmethodcommon" name="platform/frameworks/opt/inputmethodcommon" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" groups="pdk-fs" />
-  <project path="frameworks/opt/net/ims" name="platform/frameworks/opt/net/ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/net/lowpan" name="platform/frameworks/opt/net/lowpan" groups="pdk-fs" />
   <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/net/wifi" name="platform/frameworks/opt/net/wifi" groups="pdk" />
