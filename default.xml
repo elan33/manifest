@@ -43,10 +43,12 @@
   <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" groups="pdk-fs" remote="aqua" />
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="aqua" />
   <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="aqua" /> 
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="aqua" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="aqua" />
   <project path="system/core" name="system_core" remote="aqua" />
   <project path="system/extras" name="system_extras" remote="aqua" />
   <project path="system/sepolicy" name="system_sepolicy" remote="aqua" />
+  <project path="system/vold" name="system_vold" remote="aqua" />
   <project path="vendor/aquarios" name="vendor_aquarios" remote="aqua" />
 
 <!-- AquariOS Nexus devices -->
@@ -478,7 +480,6 @@
   <project path="packages/services/Car" name="platform/packages/services/Car" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/services/Mms" name="platform/packages/services/Mms" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/services/NetworkRecommendation" name="platform/packages/services/NetworkRecommendation" groups="pdk-fs" />
-  <project path="packages/services/Telecomm" name="platform/packages/services/Telecomm" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" groups="pdk-fs" />
   <project path="pdk" name="platform/pdk" groups="pdk" />
   <project path="platform_testing" name="platform/platform_testing" groups="pdk-fs,pdk-cw-fs,cts" />
@@ -543,7 +544,6 @@
   <project path="system/tools/hidl" name="platform/system/tools/hidl" groups="pdk" />
   <project path="system/tpm" name="platform/system/tpm" />
   <project path="system/update_engine" name="platform/system/update_engine" groups="pdk" />
-  <project path="system/vold" name="platform/system/vold" groups="pdk" />
   <project path="test/framework" name="platform/test/framework" groups="vts,pdk-fs" />
   <project path="test/vts" name="platform/test/vts" groups="vts,pdk-fs" />
   <project path="test/vts-testcase/fuzz" name="platform/test/vts-testcase/fuzz" groups="vts,pdk-fs" />
