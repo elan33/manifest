@@ -27,7 +27,11 @@ xsltproc unzip
 
 ```bash
 sudo apt-get update
+```
+```bash
 sudo apt-get install openjdk-8-jdk
+```
+```bash
 sudo apt-get install openjdk-8-jre
 ```
 
@@ -84,6 +88,8 @@ source ~/.bashrc
 8) In the terminal, navigate to where you would like to download the AquariOS source code. The commands below will make it in your home folder, but if you have limited space you may want to create it somewhere else. Faster is better, i.e. SSD would be best, USB external (even 3.0) will be comparatively slow. Here we go:
 ```bash
 mkdir ~/aquarios
+```
+```bash
 cd ~/aquarios
 ```
 
@@ -96,14 +102,18 @@ repo init -u https://github.com/aquarios/manifest -b a8.1.0-caf
 
 <br />
 
-10) Last step. Time to get the source, this part will take a while and will vary depending on your PC and internet speed:
-```bash
-repo sync
-```
-
-If using Mint, you will need to install support for lz4 compression using the following command:
+10) Additionally, you will want to install support for compression and kernel tools using the following commands:
 ```bash
 sudo apt-get install liblz4-tool
+```
+```bash
+sudo apt-get install -y chrpath gawk texinfo libsdl1.2-dev whiptail diffstat cpio libssl-dev
+```
+
+
+11) Last step. Time to get the source, this part will take a while and will vary depending on your PC and internet speed:
+```bash
+repo sync
 ```
 
 Build environment setup done!
