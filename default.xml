@@ -31,12 +31,14 @@
   </project>
   <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="aqua" />
   <project path="external/DUtils" name="external_DUtils" remote="aqua" />
+  <project path="external/selinux" name="external_selinux" groups="pdk" remote="aqua" />
   <project path="frameworks/base" name="frameworks_base" remote="aqua" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="aqua" />
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" groups="pdk-fs" remote="aqua" />
   <project path="packages/apps/CoralReef" name="CoralReef" remote="aqua" />
   <project path="packages/apps/Dialer" name="packages_apps_Dialer" groups="pdk-fs" remote="aqua" />
   <project path="packages/apps/DUI" name="packages_apps_DUI" remote="aqua" />
+  <project path="packages/apps/Gallery2" name="packages_apps_Gallery2" groups="pdk-fs" remote="aqua" />
   <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="aqua" />
   <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" remote="aqua" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="aqua" />
@@ -53,13 +55,21 @@
 
 <!-- AquariOS Nexus devices -->
   <!--angler -->
-  <project path="device/huawei/angler" name="device_huawei_angler" remote="aqua" />
-  <project path="kernel/huawei/angler" name="kernel_huawei_angler" remote="aqua" />
-  <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="aqua" />
+  <project path="device/huawei/angler" name="device_huawei_angler" remote="aqua-devices" />
+  <project path="kernel/huawei/angler" name="kernel_huawei_angler" remote="aqua-devices" />
+  <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="aqua-devices" />
   <!-- bullhead - COMMENTED OUT JUST FOR NOW - sorry Louis/popo ;)
-  <project path="device/lge/bullhead" name="device_lge_bullhead" remote="aqua" />
-  <project path="kernel/lge/bullhead" name="kernel_lge_bullhead" remote="aqua" />
-  <project path="vendor/lge" name="proprietary_vendor_lge" remote="aqua" /> -->
+  <project path="device/lge/bullhead" name="device_lge_bullhead" remote="aqua-devices" />
+  <project path="kernel/lge/bullhead" name="kernel_lge_bullhead" remote="aqua-devices" />
+  <project path="vendor/lge" name="proprietary_vendor_lge" remote="aqua-devices" /> -->
+  <!-- taimen -->
+  <project path="device/google/taimen" name="device_google_taimen" remote="aqua-devices" />
+  <project path="device/google/wahoo" name="device_google_wahoo" remote="aqua-devices" />
+  <project path="kernel/google/wahoo" name="kernel_google_wahoo" remote="aqua-devices" />
+  <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="aqua-devices" />
+  <project path="hardware/google/easel" name="platform/hardware/google/easel" groups="easel"  remote="aosp" />
+  <project path="vendor/google" name="proprietary_vendor_google" groups="pdk" remote="aqua-devices" />
+  <project path="vendor/pixelgapps" name="vendor_pixelgapps" remote="aqua-devices" />
 
 <!-- AOSP -->
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
@@ -292,7 +302,6 @@
   <project path="external/safe-iop" name="platform/external/safe-iop" groups="pdk" />
   <project path="external/scrypt" name="platform/external/scrypt" groups="pdk" />
   <project path="external/seccomp-tests" name="platform/external/seccomp-tests" groups="pdk" />
-  <project path="external/selinux" name="platform/external/selinux" groups="pdk" />
   <project path="external/shflags" name="platform/external/shflags" groups="pdk" />
   <project path="external/sfntly" name="platform/external/sfntly" groups="pdk,qcom_msm8x26" />
   <project path="external/skia" name="platform/external/skia" groups="pdk,qcom_msm8x26" />
@@ -422,7 +431,6 @@
   <project path="packages/apps/DocumentsUI" name="platform/packages/apps/DocumentsUI" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/EmergencyInfo" name="platform/packages/apps/EmergencyInfo" groups="pdk-fs" />
   <project path="packages/apps/ExactCalculator" name="platform/packages/apps/ExactCalculator" groups="pdk-fs" />
-  <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" groups="pdk-fs" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" groups="pdk-fs" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" groups="pdk-fs" />
   <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" groups="pdk-fs" />
