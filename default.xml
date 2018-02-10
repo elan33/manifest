@@ -59,15 +59,14 @@
   <project path="device/huawei/angler" name="device_huawei_angler" remote="aqua-devices" />
   <project path="kernel/huawei/angler" name="kernel_huawei_angler" remote="aqua-devices" />
   <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="aqua-devices" />
-  <!-- bullhead - COMMENTED OUT JUST FOR NOW - sorry Louis/popo ;)
-  <project path="device/lge/bullhead" name="device_lge_bullhead" remote="aqua-devices" />
-  <project path="kernel/lge/bullhead" name="kernel_lge_bullhead" remote="aqua-devices" />
-  <project path="vendor/lge" name="proprietary_vendor_lge" remote="aqua-devices" /> -->
+  <!-- bullhead -->
+  <project path="device/lge/bullhead" name="device_lge_bullhead" remote="aqua" />
+  <project path="kernel/lge/bullhead" name="kernel_lge_bullhead" remote="aqua" />
+  <project path="vendor/lge/bullhead" name="vendor_lge_bullhead" remote="aqua-devices" />
   <!-- taimen -->
   <project path="device/google/taimen" name="device_google_taimen" remote="aqua-devices" />
   <project path="device/google/wahoo" name="device_google_wahoo" remote="aqua-devices" />
   <project path="kernel/google/wahoo" name="kernel_google_wahoo" remote="aqua-devices" />
-  <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="aqua-devices" />
   <project path="hardware/google/easel" name="platform/hardware/google/easel" groups="easel"  remote="aosp" />
   <project path="vendor/google" name="proprietary_vendor_google" groups="pdk" remote="aqua-devices" />
   <project path="vendor/pixelgapps" name="vendor_pixelgapps" remote="aqua-devices" />
