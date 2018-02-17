@@ -68,7 +68,6 @@
   <project path="device/google/wahoo" name="device_google_wahoo" remote="aqua-devices" />
   <project path="kernel/google/wahoo" name="kernel_google_wahoo" remote="aqua-devices" />
   <project path="hardware/google/easel" name="platform/hardware/google/easel" groups="easel"  remote="aosp" />
-  <project path="vendor/ambientmusic" name="vendor_ambientmusic" groups="pdk" remote="aqua-devices" />
   <project path="vendor/google" name="proprietary_vendor_google" groups="pdk" remote="aqua-devices" />
   <project path="vendor/pixelgapps" name="vendor_pixelgapps" remote="aqua-devices" />
 
