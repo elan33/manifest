@@ -110,8 +110,17 @@ sudo apt-get install liblz4-tool
 sudo apt-get install -y chrpath gawk texinfo libsdl1.2-dev whiptail diffstat cpio libssl-dev
 ```
 
+<br />
 
-11) Last step. Time to get the source, this part will take a while and will vary depending on your PC and internet speed:
+11) YOU NEED TO ADD YOUR SSH KEY TO YOUR GITHUB ACCOUNT!
+See [here](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/).
+IMPORTANT FOR CLOUD USERS:
+In step 3 in above link, you MUST save your id_rsa in root dir, not 'home'. (cat /root/.ssh/id_rsa.pub)
+Make sure you follow BOTH sections in the guide(s) in above link, as the second section is for getting your actual key onto your git account!
+
+<br />
+
+12) Last step. Time to get the source, this part will take a while and will vary depending on your PC and internet speed:
 ```bash
 repo sync
 ```
