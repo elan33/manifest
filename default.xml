@@ -12,7 +12,7 @@
            fetch="git+ssh://git@github.com/Aqua-CAF" />
   <remote  name="aqua-devices"
            fetch="git+ssh://git@github.com/Aqua-devices" />
-  <default revision="refs/tags/android-8.1.0_r14"
+  <default revision="refs/tags/android-8.1.0_r15"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
