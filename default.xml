@@ -7,11 +7,11 @@
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com" />
   <remote  name="aqua"
-           fetch="git+ssh://git@github.com/AquariOS" />
+           fetch="https://github.com/AquariOS" />
   <remote  name="aqua-caf"
-           fetch="git+ssh://git@github.com/Aqua-CAF" />
+           fetch="https://github.com/Aqua-CAF" />
   <remote  name="aqua-devices"
-           fetch="git+ssh://git@github.com/Aqua-devices" />
+           fetch="https://github.com/Aqua-devices" />
   <default revision="refs/tags/android-8.1.0_r18"
            remote="aosp"
            sync-c="true"
