@@ -9,10 +9,10 @@
            sync-j="4" />
   <remote  name="aqua"
            revision="a8.1.0"
-           fetch="git+ssh://git@github.com/AquariOS" />
+           fetch="https://github.com/AquariOS" />
   <remote  name="aqua-devices"
            revision="a8.1.0"
-           fetch="git+ssh://git@github.com/Aqua-devices" />
+           fetch="https://github.com/Aqua-devices" />
   <project path="manifest" name="manifest" remote="aqua" />
 
   <!-- AquariOS Repo's -->
