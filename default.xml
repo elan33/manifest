@@ -81,7 +81,7 @@
   <project path="kernel/google/wahoo" name="kernel_google_wahoo" remote="aqua-devices" />
   <project path="hardware/google/easel" name="platform/hardware/google/easel" groups="easel"  remote="aosp" />
   <project path="vendor/google" name="proprietary_vendor_google" groups="pdk" remote="aqua-devices" />
-  <project path="vendor/pixelgapps" name="vendor_pixelgapps" remote="aqua-devices" />
+  <project path="vendor/gapps" name="vendor_gapps" remote="aqua-devices" />
 
 <!-- AOSP -->
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
