@@ -34,46 +34,18 @@
   <linkfile src="root.bp" dest="Android.bp" />
   <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="external/DUtils" name="external_DUtils" remote="aqua" revision="a8.1.0" />
-  <project path="frameworks/av" name="frameworks_av" remote="aqua" revision="a8.1.0-caf" />
-  <project path="frameworks/base" name="frameworks_base" remote="aqua" revision="a8.1.0-caf" />
-  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="aqua" revision="a8.1.0-caf" />
-  <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" remote="aqua" revision="a8.1.0-caf" />
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="aqua" revision="a8.1.0-caf" />
-  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" groups="pdk" remote="aqua" revision="a8.1.0-caf" />
+
   <project path="manifest" name="manifest" remote="aqua" revision="a8.1.0-caf" />
-  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" groups="pdk-fs" remote="aqua" revision="a8.1.0-caf" />
-  <project path="packages/apps/CoralReef" name="CoralReef" remote="aqua" revision="a8.1.0-caf" />
-  <project path="packages/apps/DeskClock" name="packages_apps_DeskClock" remote="aqua" revision="a8.1.0-caf" />
-  <project path="packages/apps/Dialer" name="packages_apps_Dialer" groups="pdk-fs" remote="aqua" revision="a8.1.0-caf" />
-  <project path="packages/apps/DUI" name="packages_apps_DUI" remote="aqua" revision="a8.1.0" />
-  <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="aqua" revision="a8.1.0" />
-  <project path="packages/apps/Gallery2" name="packages_apps_Gallery2" remote="aqua" revision="a8.1.0-caf" />
-  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="aqua" revision="a8.1.0-caf" />
-  <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="aqua" revision="a8.1.0-caf" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="aqua" revision="a8.1.0-caf" />
-  <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" remote="aqua" revision="a8.1.0-caf" />
-  <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" remote="aqua" revision="a8.1.0-caf" />
-  <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" groups="pdk-fs" remote="aqua" revision="a8.1.0-caf" />
-  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="aqua" revision="a8.1.0-caf" />
-  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="aqua" revision="a8.1.0-caf" />
-  <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="aqua" revision="a8.1.0" /> 
-  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="aqua" revision="a8.1.0-caf" />
-  <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="aqua" revision="a8.1.0-caf" />
-  <project path="system/core" name="system_core" remote="aqua" revision="a8.1.0-caf" />
-  <project path="system/extras" name="system_extras" remote="aqua" revision="a8.1.0-caf" />
-  <project path="system/sepolicy" name="system_sepolicy" remote="aqua" revision="a8.1.0-caf" />
-  <project path="system/vold" name="system_vold" remote="aqua" revision="a8.1.0-caf" />
-  <project path="vendor/aquarios" name="vendor_aquarios" remote="aqua" revision="a8.1.0-caf" />
 
 <!-- Devicees -->
   <!-- general -->
   <project path="device/aquarios/sepolicy" name="device_aquarios_sepolicy" remote="aqua-devices" revision="a8.1.0-caf" />
-  <!-- OnePlus -->
-  <project path="vendor/oneplus" name="proprietary_vendor_oneplus" remote="aqua-devices" revision="a8.1.0-caf" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="aqua-caf" revision="a8.1.0-aqua-caf" />
+  
   <!-- OnePlus3/3T -->
   <project path="device/oneplus/oneplus3" name="device_oneplus_oneplus3" remote="aqua-devices" revision="a8.1.0-caf" />
   <project path="kernel/oneplus/msm8996" name="kernel_oneplus_msm8996" remote="aqua-devices" revision="a8.1.0-caf" />
+
   <!-- OnePlus5/5T -->
   <project path="device/oneplus/cheeseburger" name="device_oneplus_cheeseburger" remote="aqua-devices" revision="a8.1.0-caf" />
   <project path="device/oneplus/dumpling" name="device_oneplus_dumpling" remote="aqua-devices" revision="a8.1.0-caf" />
@@ -82,15 +54,25 @@
 
 <!-- AquariOS caf branches only-->
   <!-- external -->
-  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="aqua-caf" revision="a8.1.0-aqua-caf" />
   <project path="external/ant-wireless/antradio-library" name="external_ant-wireless_antradio-library" remote="aqua-caf" revision="a8.1.0-aqua-caf" />
   <project path="external/ant-wireless/ant_native" name="external_ant-wireless_ant_native" remote="aqua-caf" revision="a8.1.0-aqua-caf" />
   <project path="external/ant-wireless/ant_service" name="external_ant-wireless_ant_service" remote="aqua-caf" revision="a8.1.0-aqua-caf" />
+  <project path="external/DUtils" name="external_DUtils" remote="aqua" revision="a8.1.0" />
   <project path="external/exfat" name="external_exfat" remote="aqua-caf" revision="a8.1.0-aqua-caf" />
   <project path="external/fuse" name="external_fuse" remote="aqua-caf" revision="a8.1.0-aqua-caf" />
   <project path="external/libphonenumber" name="external_libphonenumber" remote="aqua-caf" revision="a8.1.0-aqua-caf" />
   <project path="external/ntfs-3g" name="external_ntfs-3g" remote="aqua-caf" revision="a8.1.0-aqua-caf" />
   <project path="external/tinycompress" name="external_tinycompress" remote="aqua-caf" revision="a8.1.0-aqua-caf" />
+
+  <!-- Framework -->
+  <project path="frameworks/av" name="frameworks_av" remote="aqua" revision="a8.1.0-caf" />
+  <project path="frameworks/base" name="frameworks_base" remote="aqua" revision="a8.1.0-caf" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="aqua" revision="a8.1.0-caf" />
+  <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" remote="aqua" revision="a8.1.0-caf" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="aqua" revision="a8.1.0-caf" />
+  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" groups="pdk" remote="aqua" revision="a8.1.0-caf" />
+
+  <!-- Hardware -->
   <project path="hardware/interfaces" name="hardware_interfaces" remote="aqua-caf" revision="a8.1.0-aqua-caf" />
   <project path="hardware/libhardware" name="hardware_libhardware" remote="aqua-caf" revision="a8.1.0-aqua-caf" />
   <project path="hardware/qcom/audio" name="hardware_qcom_audio" remote="aqua-caf" revision="a8.1.0-aqua-caf" />
@@ -110,10 +92,42 @@
   <project path="hardware/qcom/camera" name="hardware_qcom_camera" remote="aqua-caf" revision="a8.1.0-aqua-caf" />
   <project path="hardware/qcom/gps" name="hardware_qcom_gps" remote="aqua-caf" revision="a8.1.0-aqua-caf" />
   <project path="hardware/ril" name="hardware_ril" remote="aqua" revision="a8.1.0-caf" />
+
+  <!-- Packages -->
+  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" groups="pdk-fs" remote="aqua" revision="a8.1.0-caf" />
+  <project path="packages/apps/CoralReef" name="CoralReef" remote="aqua" revision="a8.1.0-caf" />
+  <project path="packages/apps/DeskClock" name="packages_apps_DeskClock" remote="aqua" revision="a8.1.0-caf" />
+  <project path="packages/apps/Dialer" name="packages_apps_Dialer" groups="pdk-fs" remote="aqua" revision="a8.1.0-caf" />
+  <project path="packages/apps/DUI" name="packages_apps_DUI" remote="aqua" revision="a8.1.0" />
+  <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="aqua" revision="a8.1.0" />
+  <project path="packages/apps/Gallery2" name="packages_apps_Gallery2" remote="aqua" revision="a8.1.0-caf" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="aqua" revision="a8.1.0-caf" />
+  <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="aqua" revision="a8.1.0-caf" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="aqua" revision="a8.1.0-caf" />
+  <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" remote="aqua" revision="a8.1.0-caf" />
+  <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" remote="aqua" revision="a8.1.0-caf" />
+  <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" groups="pdk-fs" remote="aqua" revision="a8.1.0-caf" />
+  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="aqua" revision="a8.1.0-caf" />
+  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="aqua" revision="a8.1.0-caf" />
+  <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="aqua" revision="a8.1.0" /> 
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="aqua" revision="a8.1.0-caf" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="aqua" revision="a8.1.0-caf" />
+
+  <!-- System -->
   <project path="system/bt" name="system_bt" remote="aqua-caf" revision="a8.1.0-aqua-caf" />
+  <project path="system/core" name="system_core" remote="aqua" revision="a8.1.0-caf" />
+  <project path="system/extras" name="system_extras" remote="aqua" revision="a8.1.0-caf" />
   <project path="system/hwservicemanager" name="system_hwservicemanager" remote="aqua-caf" revision="a8.1.0-aqua-caf" />
   <project path="system/media" name="system_media" remote="aqua-caf" revision="a8.1.0-aqua-caf" />
   <project path="system/nfc" name="system_nfc" remote="aqua-caf" revision="a8.1.0-aqua-caf" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="aqua" revision="a8.1.0-caf" />
+  <project path="system/vold" name="system_vold" remote="aqua" revision="a8.1.0-caf" />
+
+  <!-- Vendor/OnePlus -->
+  <project path="vendor/oneplus" name="proprietary_vendor_oneplus" remote="aqua-devices" revision="a8.1.0-caf" />
+
+  <!-- Vendor -->
+  <project path="vendor/aquarios" name="vendor_aquarios" remote="aqua" revision="a8.1.0-caf" />
   <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="aqua-caf" revision="a8.1.0-aqua-caf" />
   <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="aqua-caf" revision="a8.1.0-aqua-caf" />
   <project path="vendor/qcom/opensource/dpm" name="vendor_qcom_opensource_dpm" remote="aqua-caf" revision="a8.1.0-aqua-caf" />
