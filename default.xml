@@ -51,13 +51,14 @@
   <project path="hardware/ril" name="hardware_ril" groups="pdk" remote="aqua" />
   <project path="system/nfc" name="system_nfc" groups="pdk" remote="aqua" />
 
-  <!-- taimen -->
+  <!-- taimen & walleye -->
   <project path="device/google/taimen" name="device_google_taimen" remote="aqua-devices" />
   <project path="device/google/wahoo" name="device_google_wahoo" remote="aqua-devices" />
   <project path="kernel/google/wahoo" name="kernel_google_wahoo" remote="aqua-devices" />
   <project path="hardware/google/easel" name="platform/hardware/google/easel" groups="easel"  remote="aosp" />
   <project path="vendor/google" name="proprietary_vendor_google" groups="pdk" remote="aqua-devices" />
-  <project path="vendor/gapps" name="vendor_gapps" remote="aqua-devices" />
+  <project path="vendor/pixelgapps" name="vendor_pixelgapps" remote="aqua-devices" />
+  <project path="device/google/walleye" name="device_google_walleye" remote="aqua-devices" />
 
 <!-- AquariOS Main-->
   <!-- External -->
