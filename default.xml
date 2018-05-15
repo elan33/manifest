@@ -16,16 +16,10 @@
            fetch="git+ssh://git@github.com/Aqua-devices" 
            revision="a8.1.0-caf" />
 
-  <default revision="refs/tags/android-8.1.0_r20"
+  <default revision="refs/tags/android-8.1.0_r23"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
-
-<!-- temp -->
-  <remote  name="aqua-og"
-           fetch="git+ssh://git@github.com/AquariOS" />
-  <remote  name="aqua-caf"
-           fetch="git+ssh://git@github.com/Aqua-CAF" />
 
   <!-- AquariOS Aosp Forks -->
   <project path="build/make" name="build" groups="pdk" remote="aqua"  >
@@ -49,7 +43,7 @@
   <project path="external/tinycompress" name="external_tinycompress" remote="aqua" />
   <project path="external/chromium-webview" name="external_chromium-webview" remote="aqua" />
   <project path="frameworks/av" name="frameworks_av" remote="aqua" />
-  <project path="frameworks/base" name="frameworks_base" remote="aqua-og" revision="a8.1.0-caf" />
+  <project path="frameworks/base" name="frameworks_base" remote="aqua" />
   <project path="frameworks/native" name="frameworks_native" remote="aqua" />
   <project path="frameworks/support" name="frameworks_support" remote="aqua" />
   <project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt" remote="aqua" />
@@ -75,7 +69,8 @@
   <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="aqua" />
   <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="aqua" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="aqua" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="aqua-og" revision="a8.1.0-caf" />
+  <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" remote="aqua" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="aqua" />
   <project path="packages/apps/Stk" name="packages_apps_Stk" remote="aqua" />
   <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" remote="aqua" />
   <project path="packages/providers/ContactsProvider" name="packages_providers_ContactsProvider" remote="aqua" />
@@ -83,6 +78,8 @@
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="aqua" />
   <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" remote="aqua" />
   <project path="packages/services/Mms" name="packages_services_Mms" remote="aqua" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="aqua" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="aqua" />
   <project path="prebuilts/misc" name="prebuilts_misc" remote="aqua" />
   <project path="system/bt" name="system_bt" remote="aqua" />
   <project path="system/core" name="system_core" remote="aqua" />
@@ -145,19 +142,6 @@
   </project>
   <project path="manifest" name="manifest" remote="aqua" />
   <project path="vendor/aquarios" name="vendor_aquarios" remote="aqua" />
-
-  <!-- rebase bringup -->
-  <project path="packages/apps/DUI" name="packages_apps_DUI" remote="aqua-og" revision="a8.1.0" />
-  <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="aqua-og" revision="a8.1.0" />
-  <project path="packages/apps/CoralReef" name="CoralReef" remote="aqua-og" revision="a8.1.0-caf" />
-  <project path="external/DUtils" name="external_DUtils" remote="aqua-og" revision="a8.1.0" />
-  <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="aqua-og" revision="a8.1.0" /> 
-  <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" remote="aqua-og" revision="a8.1.0-caf" />
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="aqua-og" revision="a8.1.0-caf" />
-  <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" remote="aqua-og" revision="a8.1.0-caf" />
-  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="aqua-og" revision="a8.1.0-caf" />
-  <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="aqua-og" revision="a8.1.0-caf" />
-  <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" remote="aqua-caf" revision="a8.1.0-aqua-caf" />
 
   <!-- AOSP repos -->
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
@@ -475,11 +459,13 @@
   <project path="frameworks/opt/inputconnectioncommon" name="platform/frameworks/opt/inputconnectioncommon" groups="pdk-fs" />
   <project path="frameworks/opt/inputmethodcommon" name="platform/frameworks/opt/inputmethodcommon" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" groups="pdk-fs" />
+  <project path="frameworks/opt/net/ims" name="platform/frameworks/opt/net/ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/net/lowpan" name="platform/frameworks/opt/net/lowpan" groups="pdk-fs" />
   <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/net/wifi" name="platform/frameworks/opt/net/wifi" groups="pdk" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs,pdk-fs" />
+  <project path="frameworks/opt/telephony" name="platform/frameworks/opt/telephony" groups="pdk" />
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" />
