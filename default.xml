@@ -129,6 +129,7 @@
   <project path="hardware/qcom/media-caf/msm8998" name="hardware_qcom_media" revision="a8.1.0-caf-8998" remote="aqua" />
   <project path="hardware/qcom/wlan-caf" name="hardware_qcom_wlan" remote="aqua" />
   <project path="hardware/ril-caf" name="hardware_ril" remote="aqua" />
+  <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" remote="aqua-caf" revision="a8.1.0-aqua-caf" />
   <project path="vendor/qcom/opensource/cryptfs_hw" name="vendor_qcom_opensource_cryptfs_hw" remote="aqua" />
   <project path="vendor/qcom/opensource/dpm" name="vendor_qcom_opensource_dpm" remote="aqua" />
   <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="aqua" />
@@ -144,7 +145,7 @@
   <project path="external/DUtils" name="external_DUtils" remote="aqua-og" revision="a8.1.0" />
   <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="aqua-og" revision="a8.1.0" />
 
-  <!-- Slim Additions -->
+  <!-- AquariOS Additions -->
   <project path="device/aquarios/sepolicy" name="device_aquarios_sepolicy" remote="aqua" />
   <project path="external/exfat" name="external_exfat" remote="aqua" />
   <project path="external/fuse" name="external_fuse" remote="aqua" />
