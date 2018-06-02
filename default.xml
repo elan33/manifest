@@ -6,17 +6,16 @@
 
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
-           review="android-review.googlesource.com" />
+           review="android-review.googlesource.com"
+           revision="refs/tags/android-8.1.0_r28" />
 
   <remote  name="aqua"
-           fetch="git+ssh://git@github.com/AquariOS" 
-           revision="a8.1.0-caf" />
+           fetch="git+ssh://git@github.com/AquariOS" />
 
   <remote  name="aqua-devices"
-           fetch="git+ssh://git@github.com/Aqua-devices" 
-           revision="a8.1.0-caf" />
+           fetch="git+ssh://git@github.com/Aqua-devices" />
 
-  <default revision="refs/tags/android-8.1.0_r28"
+  <default revision="a8.1.0-caf"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
