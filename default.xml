@@ -144,16 +144,16 @@
   <!-- rebase bringup -->
   <project path="packages/apps/DUI" name="packages_apps_DUI" remote="aqua" revision="a8.1.0" />
   <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="aqua" revision="a8.1.0" />
-  <project path="packages/apps/CoralReef" name="CoralReef" remote="aqua"/>
+  <project path="packages/apps/CoralReef" name="CoralReef" remote="aqua" />
   <project path="external/DUtils" name="external_DUtils" remote="aqua" revision="a8.1.0" />
   <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="aqua" revision="a8.1.0" /> 
-  <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" remote="aqua"/>
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="aqua"/>
+  <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" remote="aqua" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="aqua" />
   <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="aqua" />
-  <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" remote="aqua"/>
-  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="aqua"/>
-  <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="aqua"/>
-  <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" remote="aqua-caf" revision="a8.1.0-aqua-caf" />
+  <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" remote="aqua" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="aqua" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="aqua" />
+  <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" remote="aqua" />
 
   <!-- AOSP repos -->
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
