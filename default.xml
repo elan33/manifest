@@ -10,10 +10,10 @@
            revision="refs/tags/android-8.1.0_r30" />
 
   <remote  name="aqua"
-           fetch="git+ssh://git@github.com/AquariOS" />
+           fetch="https://github.com/AquariOS" />
 
   <remote  name="aqua-devices"
-           fetch="git+ssh://git@github.com/Aqua-devices" />
+           fetch="https://github.com/Aqua-devices" />
 
   <default revision="a8.1.0-caf"
            remote="aosp"
@@ -42,7 +42,7 @@
   <project path="external/tinycompress" name="external_tinycompress" remote="aqua" />
   <project path="external/chromium-webview" name="external_chromium-webview" remote="aqua" />
   <project path="frameworks/av" name="frameworks_av" remote="aqua" />
-  <project path="frameworks/base" name="frameworks_base" remote="aqua"/>
+  <project path="frameworks/base" name="frameworks_base" remote="aqua" revision="a8.1.0-caf-gsi" />
   <project path="frameworks/native" name="frameworks_native" remote="aqua" />
   <project path="frameworks/support" name="frameworks_support" remote="aqua" />
   <project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt" remote="aqua" />
@@ -86,7 +86,7 @@
   <project path="system/media" name="system_media" remote="aqua" />
   <project path="system/netd" name="system_netd" remote="aqua" />
   <project path="system/nfc" name="system_nfc" remote="aqua" />
-  <project path="system/sepolicy" name="system_sepolicy" remote="aqua" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="aqua" revision="a8.1.0-caf-gsi" />
   <project path="system/vold" name="system_vold" remote="aqua" />
 
   <!-- Codeaurora Additions -->
@@ -143,7 +143,7 @@
   <!-- rebase bringup -->
   <project path="packages/apps/DUI" name="packages_apps_DUI" remote="aqua" revision="a8.1.0" />
   <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="aqua" revision="a8.1.0" />
-  <project path="packages/apps/CoralReef" name="CoralReef" remote="aqua" />
+  <project path="packages/apps/CoralReef" name="CoralReef" remote="aqua" revision="a8.1.0-caf-gsi" />
   <project path="external/DUtils" name="external_DUtils" remote="aqua" revision="a8.1.0" />
   <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="aqua" revision="a8.1.0" /> 
   <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" remote="aqua" />
