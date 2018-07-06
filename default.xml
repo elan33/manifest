@@ -11,10 +11,6 @@
 
   <remote  name="aqua"
            fetch="https://git@github.com/AquariOS" />
-
-  <remote  name="aqua-devices"
-           fetch="https://git@github.com/Aqua-devices" />
-
   
   <default revision="a8.1.0-caf"
            remote="aosp"
@@ -22,6 +18,7 @@
            sync-j="4" />
 
   <!-- AquariOS Aosp Forks -->
+  <project path="art" name="art" groups="pdk" remote="aqua"  />  
   <project path="build/make" name="build" groups="pdk" remote="aqua"  >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -106,6 +103,7 @@
   <project path="hardware/qcom/audio-caf/msm8994" name="hardware_qcom_audio" revision="a8.1.0-caf-8994" remote="aqua" />
   <project path="hardware/qcom/audio-caf/msm8996" name="hardware_qcom_audio" revision="a8.1.0-caf-8996" remote="aqua" />
   <project path="hardware/qcom/audio-caf/msm8998" name="hardware_qcom_audio" revision="a8.1.0-caf-8998" remote="aqua" />
+  <project path="hardware/qcom/audio-caf/sdm845" name="hardware_qcom_audio" revision="a8.1.0-caf-845" remote="aqua" />
   <project path="hardware/qcom/bt-caf" name="hardware_qcom_bt-caf" revision="a8.1.0-caf" remote="aqua" />
   <project path="hardware/qcom/display-caf/msm8916" name="hardware_qcom_display" revision="a8.1.0-caf-8916" remote="aqua" />
   <project path="hardware/qcom/display-caf/msm8960" name="hardware_qcom_display" revision="a8.1.0-caf-8960" remote="aqua" />
@@ -113,12 +111,14 @@
   <project path="hardware/qcom/display-caf/msm8994" name="hardware_qcom_display" revision="a8.1.0-caf-8994" remote="aqua" />
   <project path="hardware/qcom/display-caf/msm8996" name="hardware_qcom_display" revision="a8.1.0-caf-8996" remote="aqua" />
   <project path="hardware/qcom/display-caf/msm8998" name="hardware_qcom_display" revision="a8.1.0-caf-8998" remote="aqua" />
+  <project path="hardware/qcom/display-caf/sdm845" name="hardware_qcom_display" revision="a8.1.0-caf-845" remote="aqua" />
   <project path="hardware/qcom/media-caf/msm8916" name="hardware_qcom_media" revision="a8.1.0-caf-8916" remote="aqua" />
   <project path="hardware/qcom/media-caf/msm8960" name="hardware_qcom_media" revision="a8.1.0-caf-8960" remote="aqua" />
   <project path="hardware/qcom/media-caf/msm8974" name="hardware_qcom_media" revision="a8.1.0-caf-8974" remote="aqua" />
   <project path="hardware/qcom/media-caf/msm8994" name="hardware_qcom_media" revision="a8.1.0-caf-8994" remote="aqua" />
   <project path="hardware/qcom/media-caf/msm8996" name="hardware_qcom_media" revision="a8.1.0-caf-8996" remote="aqua" />
   <project path="hardware/qcom/media-caf/msm8998" name="hardware_qcom_media" revision="a8.1.0-caf-8998" remote="aqua" />
+  <project path="hardware/qcom/media-caf/sdm845" name="hardware_qcom_media" revision="a8.1.0-caf-845" remote="aqua" />
   <project path="hardware/qcom/wlan-caf" name="hardware_qcom_wlan-caf" remote="aqua" />
   <project path="hardware/ril-caf" name="hardware_ril-caf" remote="aqua" />
   <project path="vendor/qcom/opensource/cryptfs_hw" name="vendor_qcom_opensource_cryptfs_hw" remote="aqua" />
@@ -157,7 +157,6 @@
 
   <!-- AOSP repos -->
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
-  <project path="art" name="platform/art" groups="pdk" />
   <project path="compatibility/cdd" name="platform/compatibility/cdd" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
