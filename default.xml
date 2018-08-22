@@ -4,7 +4,7 @@
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/"
            sync-c="true" />
-  <default revision="refs/tags/android-8.1.0_r15"
+  <default revision="refs/tags/android-8.1.0_r43"
            remote="aosp"
            sync-j="4" />
   <remote  name="aqua"
@@ -30,18 +30,56 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="aqua" />
+
+<!-- AquariOS Nexus devices -->
+  <!--angler -->
+  <project path="device/huawei/angler" name="device_huawei_angler" remote="aqua-devices" />
+  <project path="kernel/huawei/angler" name="kernel_huawei_angler" remote="aqua-devices" />
+  <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="aqua-devices" />
+
+  <!-- bullhead -->
+  <project path="device/lge/bullhead" name="device_lge_bullhead" remote="aqua" />
+  <project path="kernel/lge/bullhead" name="kernel_lge_bullhead" remote="aqua" />
+  <project path="vendor/lge/bullhead" name="vendor_lge_bullhead" remote="aqua-devices" />
+
+  <!-- shamu -->
+  <project path="device/moto/shamu" name="device_moto_shamu" groups="pdk" remote="aqua-devices" />
+  <project path="kernel/moto/shamu" name="kernel_moto_shamu" groups="device,shamu,broadcom_pdk" remote="aqua-devices" />
+  <project path="vendor/moto" name="proprietary_vendor_moto" groups="pdk" remote="aqua-devices" />
+  <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk" remote="aqua" />
+  <project path="hardware/qcom/msm8x84" name="hardware_qcom_msm8x84" groups="qcom_msm8x84,pdk" remote="aqua" />
+  <project path="hardware/ril" name="hardware_ril" groups="pdk" remote="aqua" />
+  <project path="system/nfc" name="system_nfc" groups="pdk" remote="aqua" />
+
+  <!-- taimen & walleye -->
+  <project path="device/google/taimen" name="device_google_taimen" remote="aqua-devices" />
+  <project path="device/google/wahoo" name="device_google_wahoo" remote="aqua-devices" />
+  <project path="kernel/google/wahoo" name="kernel_google_wahoo" remote="aqua-devices" />
+  <project path="hardware/google/easel" name="platform/hardware/google/easel" groups="easel"  remote="aosp" />
+  <project path="vendor/google" name="proprietary_vendor_google" groups="pdk" remote="aqua-devices" />
+  <project path="vendor/pixelgapps" name="vendor_pixelgapps" remote="aqua-devices" />
+  <project path="device/google/walleye" name="device_google_walleye" remote="aqua-devices" />
+
+<!-- AquariOS Main-->
+  <!-- External -->
   <project path="external/DUtils" name="external_DUtils" remote="aqua" />
   <project path="external/selinux" name="external_selinux" groups="pdk" remote="aqua" />
+
+  <!-- Framework -->
   <project path="frameworks/av" name="frameworks_av" remote="aqua" />
   <project path="frameworks/base" name="frameworks_base" remote="aqua" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="aqua" />
+
+  <!-- Packages -->
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" groups="pdk-fs" remote="aqua" />
+  <project path="packages/apps/Contacts" name="packages_apps_Contacts" groups="pdk-fs" remote="aqua" />
   <project path="packages/apps/CoralReef" name="CoralReef" remote="aqua" />
   <project path="packages/apps/DeskClock" name="packages_apps_DeskClock" remote="aqua" />
   <project path="packages/apps/Dialer" name="packages_apps_Dialer" groups="pdk-fs" remote="aqua" />
   <project path="packages/apps/DUI" name="packages_apps_DUI" remote="aqua" />
   <project path="packages/apps/EmergencyInfo" name="packages_apps_EmergencyInfo" groups="pdk-fs" remote="aqua" />
   <project path="packages/apps/Gallery2" name="packages_apps_Gallery2" groups="pdk-fs" remote="aqua" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" groups="pdk-fs" remote="aqua" />
   <project path="packages/apps/Messaging" name="packages_apps_Messaging" groups="pdk-fs" remote="aqua" />
   <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="aqua" />
   <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" remote="aqua" />
@@ -51,28 +89,18 @@
   <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="aqua" /> 
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="aqua" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="aqua" />
+
+  <!-- Prebuilts -->
+  <project path="prebuilts/clang/host/linux-x86" name="prebuilts_clang_host_linux-x86" groups="pdk" clone-depth="1" remote="aqua" />
+
+  <!-- System -->
   <project path="system/core" name="system_core" remote="aqua" />
   <project path="system/extras" name="system_extras" remote="aqua" />
   <project path="system/sepolicy" name="system_sepolicy" remote="aqua" />
   <project path="system/vold" name="system_vold" remote="aqua" />
-  <project path="vendor/aquarios" name="vendor_aquarios" remote="aqua" />
 
-<!-- AquariOS Nexus devices -->
-  <!--angler -->
-  <project path="device/huawei/angler" name="device_huawei_angler" remote="aqua-devices" />
-  <project path="kernel/huawei/angler" name="kernel_huawei_angler" remote="aqua-devices" />
-  <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="aqua-devices" />
-  <!-- bullhead -->
-  <project path="device/lge/bullhead" name="device_lge_bullhead" remote="aqua" />
-  <project path="kernel/lge/bullhead" name="kernel_lge_bullhead" remote="aqua" />
-  <project path="vendor/lge/bullhead" name="vendor_lge_bullhead" remote="aqua-devices" />
-  <!-- taimen -->
-  <project path="device/google/taimen" name="device_google_taimen" remote="aqua-devices" />
-  <project path="device/google/wahoo" name="device_google_wahoo" remote="aqua-devices" />
-  <project path="kernel/google/wahoo" name="kernel_google_wahoo" remote="aqua-devices" />
-  <project path="hardware/google/easel" name="platform/hardware/google/easel" groups="easel"  remote="aosp" />
-  <project path="vendor/google" name="proprietary_vendor_google" groups="pdk" remote="aqua-devices" />
-  <project path="vendor/pixelgapps" name="vendor_pixelgapps" remote="aqua-devices" />
+  <!-- Vendor -->
+  <project path="vendor/aquarios" name="vendor_aquarios" remote="aqua" />
 
 <!-- AOSP -->
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
@@ -240,7 +268,6 @@
   <project path="external/libusb" name="platform/external/libusb" groups="pdk" />
   <project path="external/libusb-compat" name="platform/external/libusb-compat" groups="pdk" />
   <project path="external/libvncserver" name="platform/external/libvncserver" groups="pdk" />
-  <project path="external/libvorbis" name="platform/external/libvorbis" groups="pdk" />
   <project path="external/libvpx" name="platform/external/libvpx" groups="pdk" />
   <project path="external/libvterm" name="platform/external/libvterm" groups="pdk" />
   <project path="external/libxml2" name="platform/external/libxml2" groups="pdk,libxml2" />
@@ -395,7 +422,6 @@
   <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="pdk,broadcom_wlan" />
   <project path="hardware/google/apf" name="platform/hardware/google/apf" groups="pdk" />
-  <project path="hardware/interfaces" name="platform/hardware/interfaces" groups="pdk" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense,pdk" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
@@ -415,11 +441,9 @@
   <project path="hardware/qcom/msm8998" name="platform/hardware/qcom/msm8998" groups="qcom_msm8998" />
   <project path="hardware/qcom/msm8x26" name="platform/hardware/qcom/msm8x26" groups="qcom_msm8x26,pdk" />
   <project path="hardware/qcom/msm8x27" name="platform/hardware/qcom/msm8x27" groups="qcom_msm8x27,pdk" />
-  <project path="hardware/qcom/msm8x84" name="platform/hardware/qcom/msm8x84" groups="qcom_msm8x84,pdk" />
   <project path="hardware/qcom/msm8x09" name="platform/hardware/qcom/msm8x09" groups="qcom_msm8x09" />
   <project path="hardware/qcom/power" name="platform/hardware/qcom/power" groups="qcom,pdk" />
   <project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" groups="qcom_wlan,pdk" />
-  <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" />
   <project path="libcore" name="platform/libcore" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" groups="pdk-cw-fs,pdk-fs" />
@@ -428,12 +452,10 @@
   <project path="packages/apps/CarrierConfig" name="platform/packages/apps/CarrierConfig" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" groups="pdk-cw-fs,pdk-fs" />
-  <project path="packages/apps/Contacts" name="platform/packages/apps/Contacts" groups="pdk-fs" />
   <project path="packages/apps/DocumentsUI" name="platform/packages/apps/DocumentsUI" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/ExactCalculator" name="platform/packages/apps/ExactCalculator" groups="pdk-fs" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" groups="pdk-fs" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" groups="pdk-fs" />
-  <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" groups="pdk-fs" />
   <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" groups="pdk-fs" />
   <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" groups="pdk-fs" />
   <project path="packages/apps/Music" name="platform/packages/apps/Music" groups="pdk-fs" />
@@ -494,7 +516,6 @@
   <project path="prebuilts/checkcolor" name="platform/prebuilts/checkcolor" groups="pdk" clone-depth="1" />
   <project path="prebuilts/checkstyle" name="platform/prebuilts/checkstyle" groups="pdk" clone-depth="1" />
   <project path="prebuilts/clang/host/darwin-x86" name="platform/prebuilts/clang/host/darwin-x86" groups="pdk,darwin" clone-depth="1" />
-  <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" groups="pdk" clone-depth="1" />
   <project path="prebuilts/devtools" name="platform/prebuilts/devtools" groups="pdk-fs" clone-depth="1" />
   <project path="prebuilts/deqp" name="platform/prebuilts/deqp" groups="pdk-fs" />
   <project path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,darwin,arm" clone-depth="1" />
@@ -542,7 +563,6 @@
   <project path="system/libvintf" name="platform/system/libvintf" groups="pdk" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
   <project path="system/netd" name="platform/system/netd" groups="pdk" />
-  <project path="system/nfc" name="platform/system/nfc" groups="pdk" />
   <project path="system/nvram" name="platform/system/nvram" groups="pdk" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
   <project path="system/tools/aidl" name="platform/system/tools/aidl" groups="pdk" />
