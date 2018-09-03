@@ -64,9 +64,9 @@
   <!-- Framework -->
   <project path="frameworks/base" name="frameworks_base" remote="aqua" />
 
-  <!-- Packages
+  <!-- Packages -->
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" groups="pdk-fs" remote="aqua" />
-  <project path="packages/apps/Contacts" name="packages_apps_Contacts" groups="pdk-fs" remote="aqua" />
+<!--<project path="packages/apps/Contacts" name="packages_apps_Contacts" groups="pdk-fs" remote="aqua" />
   <project path="packages/apps/CoralReef" name="CoralReef" remote="aqua" />
   <project path="packages/apps/DeskClock" name="packages_apps_DeskClock" remote="aqua" />
   <project path="packages/apps/Dialer" name="packages_apps_Dialer" groups="pdk-fs" remote="aqua" />

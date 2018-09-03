@@ -69,6 +69,7 @@
   <remove-project name="platform/hardware/intel/sensors" />
 
   <!-- Packages -->
+  <remove-project name="platform/packages/apps/Bluetooth" />
   <remove-project name="platform/packages/apps/Browser2" />
   <remove-project name="platform/packages/apps/DevCamera" />
   <remove-project name="platform/packages/apps/Email" />
