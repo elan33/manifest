@@ -2,7 +2,7 @@
 [<center><img src="http://i67.tinypic.com/10zzl2h.png" height="100%" width="100%;"/></center>](https://github.com/aquarios)
 
 ## Setting up your build environment ##
-To setup your build environment and sync AquariOS, please follow the guide below.
+**Please read entire guide carefully and attempt these steps on your own before asking for help.  To setup your build environment and sync AquariOS, please follow the guide below.
 
 1) If doing a fresh install, skip to step 2. Otherwise, do the following:
 
@@ -114,8 +114,12 @@ sudo apt-get install -y chrpath gawk texinfo libsdl1.2-dev whiptail diffstat cpi
 
 11) YOU NEED TO ADD YOUR SSH KEY TO YOUR GITHUB ACCOUNT!
 See [here](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/).
-IMPORTANT FOR CLOUD USERS:
-In step 3 in above link, you MUST save your id_rsa in root dir, not 'home'. (cat /root/.ssh/id_rsa.pub)
+**IMPORTANT FOR CLOUD USERS:**
+You must do the following before starting SSH steps
+```bash
+sudo su
+```
+Alternatively you can do this instead. In step 3 in above link, you __MUST__ save your id_rsa in root dir, __NOT__ 'home'. (cat /root/.ssh/id_rsa.pub)
 Make sure you follow BOTH sections in the guide(s) in above link, as the second section is for getting your actual key onto your git account!
 
 <br />
