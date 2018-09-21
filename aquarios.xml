@@ -63,6 +63,7 @@
 
   <!-- Framework -->
   <project path="frameworks/base" name="frameworks_base" remote="aqua" />
+  <project path="frameworks/support" name="frameworks_support" remote="aqua" />
 
   <!-- Packages -->
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" groups="pdk-fs" remote="aqua" />
