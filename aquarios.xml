@@ -55,7 +55,7 @@
   <project path="kernel/google/wahoo" name="kernel_google_wahoo" remote="aqua2" />
   <project path="vendor/google" name="proprietary_vendor_google" groups="pdk" remote="aqua2" />
   <project path="vendor/pixelgapps" name="vendor_pixelgapps" clone-depth="1" remote="gitlab" />
-<!--<project path="device/google/walleye" name="device_google_walleye" remote="aqua2" />-->
+  <project path="device/google/walleye" name="device_google_walleye" remote="aqua2" />
 
 <!-- AquariOS Main -->
   <!-- External -->
