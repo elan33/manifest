@@ -98,5 +98,6 @@
   <!-- Vendor -->
   <project path="vendor/aquarios" name="vendor_aquarios" remote="aqua" />
   <project path="vendor/assets" name="vendor_assets" remote="aqua" />
+  <project path="vendor/support" name="vendor_support" remote="aqua" />
 
 </manifest>
