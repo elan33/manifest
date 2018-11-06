@@ -62,6 +62,7 @@
   <project path="external/selinux" name="external_selinux" groups="pdk" remote="aqua" />
 
   <!-- Framework -->
+  <project path="frameworks/av" name="frameworks_av" remote="aqua" />
   <project path="frameworks/base" name="frameworks_base" remote="aqua" />
   <project path="frameworks/support" name="frameworks_support" remote="aqua" />
 
