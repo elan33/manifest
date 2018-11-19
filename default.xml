@@ -118,8 +118,8 @@
 <!-- Vendors -->
   <!-- AquariOS -->
   <project path="vendor/aquarios" name="vendor_aquarios" />
-  <project path="vendor/assets" name="vendor_assets" />
-  <project path="vendor/support" name="vendor_support" />
+  <project path="vendor/assets" name="vendor_assets" revision="a9" />
+  <project path="vendor/support" name="vendor_support" revision="a9" />
   <!-- Caf -->
   <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" />
   <project path="vendor/qcom/opensource/audio" name="vendor_qcom_opensource_audio" />
