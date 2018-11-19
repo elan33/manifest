@@ -63,6 +63,7 @@
 
   <!-- Framework -->
   <project path="frameworks/av" name="frameworks_av" remote="aqua" />
+  <project path="frameworks/aquarios" name="frameworks_aquarios" remote="aqua" />
   <project path="frameworks/base" name="frameworks_base" remote="aqua" />
   <project path="frameworks/support" name="frameworks_support" remote="aqua" />
 
