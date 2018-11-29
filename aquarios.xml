@@ -30,17 +30,17 @@
   <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="aqua" />
 
 <!-- AquariOS Nexus devices -->
-  <!--angler 
+  <!--angler
   <project path="device/huawei/angler" name="device_huawei_angler" remote="aqua2" />
   <project path="kernel/huawei/angler" name="kernel_huawei_angler" remote="aqua2" />
   <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="aqua2" /> -->
 
-  <!-- bullhead 
+  <!-- bullhead
   <project path="device/lge/bullhead" name="device_lge_bullhead" remote="aqua2" />
   <project path="kernel/lge/bullhead" name="kernel_lge_bullhead" remote="aqua2" />
   <project path="vendor/lge/bullhead" name="vendor_lge_bullhead" remote="aqua2" /> -->
 
-  <!-- shamu 
+  <!-- shamu
   <project path="device/moto/shamu" name="device_moto_shamu" groups="pdk" remote="aqua2" />
   <project path="kernel/moto/shamu" name="kernel_moto_shamu" groups="device,shamu,broadcom_pdk" remote="aqua2" />
   <project path="vendor/moto" name="proprietary_vendor_moto" groups="pdk" remote="aqua2" />
@@ -81,13 +81,13 @@
   <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="aqua" />
   <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" remote="aqua" /> -->
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="aqua" />
-  <project path="packages/apps/Settings" name="packages_apps_SmartNav" remote="aqua" />
-  <project path="packages/apps/Settings" name="packages_apps_SmartNavSettings" remote="aqua" />
+  <project path="packages/apps/SmartNav" name="packages_apps_SmartNav" remote="aqua" />
+  <project path="packages/apps/SmartNavSettings" name="packages_apps_SmartNavSettings" remote="aqua" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" groups="pdk-fs" remote="aqua" />
   <!--project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" groups="pdk-fs" remote="aqua" />
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="aqua" />-->
   <project path="packages/providers/AmbientPlayHistoryProvider" name="packages_providers_AmbientPlayHistoryProvider" remote="aqua" />
-<!--<project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="aqua" /> 
+<!--<project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="aqua" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="aqua" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="aqua" /> -->
 
