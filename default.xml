@@ -51,8 +51,8 @@
   <project path="external/tinycompress" name="external_tinycompress" groups="pdk" />
 
 <!-- Frameworks -->
-  <project path="frameworks/av" name="frameworks_av" groups="pdk" />
   <project path="frameworks/aquarios" name="frameworks_aquarios" revision="a9" />
+  <project path="frameworks/av" name="frameworks_av" groups="pdk" />
   <project path="frameworks/base" name="frameworks_base" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" />
   <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" groups="pdk" />
@@ -66,7 +66,7 @@
   <project path="hardware/libhardware" name="hardware_libhardware" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" groups="pdk" />
   <project path="hardware/nxp/nfc" name="hardware_nxp_nfc" groups="pdk" />
-  <project path="hardware/qcom/audio" name="hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="a9-caf-aosp" />
+  <project path="hardware/qcom/audio/default" name="hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="a9-caf-aosp" />
   <project path="hardware/qcom/audio-caf/sdm845" name="hardware_qcom_audio" revision="a9-caf-845" />
   <project path="hardware/qcom/audio-caf/msm8994" name="hardware_qcom_audio" revision="a9-caf-8994" />
   <project path="hardware/qcom/audio-caf/msm8996" name="hardware_qcom_audio" revision="a9-caf-8996" />
@@ -115,8 +115,10 @@
 <!-- System -->
   <project path="system/bt" name="system_bt" />
   <project path="system/core" name="system_core" groups="pdk" />
-  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" />
+  <project path="system/netd" name="system_netd" groups="pdk"  />
   <project path="system/qcom" name="system_qcom" />
+  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" />
+  <project path="system/tools/dtbtool" name="system_tools_dtbtool" />
   <project path="system/update_engine" name="system_update_engine" groups="pdk" />
   <project path="system/vold" name="system_vold" groups="pdk" />
 
@@ -125,6 +127,7 @@
   <project path="vendor/aquarios" name="vendor_aquarios" />
   <project path="vendor/assets" name="vendor_assets" revision="a9" />
   <project path="vendor/support" name="vendor_support" revision="a9" />
+
   <!-- Caf -->
   <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" />
   <project path="vendor/qcom/opensource/audio" name="vendor_qcom_opensource_audio" />
@@ -145,6 +148,7 @@
   <project path="developers/samples/android" name="platform/developers/samples/android" groups="developers" remote="aosp" />
   <project path="development" name="platform/development" groups="developers,pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="device/generic/goldfish-opengl" name="device/generic/goldfish-opengl" groups="pdk" remote="aosp" />
+  <project path="device/google/contexthub" name="device/google/contexthub" groups="device,marlin,pdk" remote="aosp" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" remote="aosp" />
   <project path="external/abi-compliance-checker" name="platform/external/abi-compliance-checker" groups="pdk" remote="aosp" />
   <project path="external/abi-dumper" name="platform/external/abi-dumper" groups="pdk" remote="aosp" />
@@ -673,7 +677,6 @@
   <project path="system/libufdt" name="platform/system/libufdt" groups="pdk" remote="aosp" />
   <project path="system/libvintf" name="platform/system/libvintf" groups="pdk" remote="aosp" />
   <project path="system/media" name="platform/system/media" groups="pdk" remote="aosp" />
-  <project path="system/netd" name="platform/system/netd" groups="pdk" remote="aosp" />
   <project path="system/nfc" name="platform/system/nfc" groups="pdk" remote="aosp" />
   <project path="system/nvram" name="platform/system/nvram" groups="pdk" remote="aosp" />
   <project path="system/security" name="platform/system/security" groups="pdk" remote="aosp" />
