@@ -9,13 +9,14 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/"
-           revision="refs/tags/android-9.0.0_r16" />
+           revision="refs/tags/android-9.0.0_r21" />
 
   <default revision="a9-caf"
            remote="aqua"
            sync-f="true"
            sync-c="true"
            sync-j="8" />
+
 
 <!-- AquariOS -->
   <project path="manifest" name="manifest" />
