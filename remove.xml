@@ -92,6 +92,7 @@
   <remove-project name="platform/packages/apps/Test/connectivity" />
   <remove-project name="platform/packages/apps/UnifiedEmail" />
   <remove-project name="platform/packages/inputmethods/OpenWnn" />
+  <remove-project name="platform/packages/services/Telecomm" />
 
   <!-- System -->
   <remove-project name="platform/system/core" />
