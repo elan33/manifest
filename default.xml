@@ -3,6 +3,9 @@
   <remote  name="github"
            fetch="https://github.com" />
 
+<remote  name="gitlab"
+           fetch="https://gitlab.com" />
+
   <remote  name="aqua"
            fetch="git+ssh://git@github.com/AquariOS" />
 
@@ -112,6 +115,8 @@
 
 <!-- Prebuilts -->
   <project path="prebuilts/build-tools" name="prebuilts_build-tools" groups="pdk" remote="aqua" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-gnu-8.2" name="anirudhgupta109/gcc-prebuilts " remote="gitlab" revision="8.2.1" />
+  <project path="prebuilts/clang/host/linux-x86" name="prebuilts_clang_host_linux-x86" groups="pdk" clone-depth="1" remote="aqua" />
 
 <!-- System -->
   <project path="system/bt" name="system_bt" remote="aqua" />
@@ -626,7 +631,6 @@
   <project path="prebuilts/checkstyle" name="platform/prebuilts/checkstyle" groups="pdk" clone-depth="1" remote="aosp" />
   <project path="prebuilts/clang-tools" name="platform/prebuilts/clang-tools" groups="pdk" clone-depth="1" remote="aosp" />
   <project path="prebuilts/clang/host/darwin-x86" name="platform/prebuilts/clang/host/darwin-x86" groups="pdk,darwin" clone-depth="1" remote="aosp" />
-  <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" groups="pdk" clone-depth="1" remote="aosp" />
   <project path="prebuilts/deqp" name="platform/prebuilts/deqp" groups="pdk-fs" clone-depth="1" remote="aosp" />
   <project path="prebuilts/devtools" name="platform/prebuilts/devtools" groups="pdk-fs" clone-depth="1" remote="aosp" />
   <project path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,darwin,arm" clone-depth="1" remote="aosp" />
