@@ -117,7 +117,7 @@
 <!-- Prebuilts -->
   <project path="prebuilts/build-tools" name="prebuilts_build-tools" groups="pdk" remote="aqua" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-gnu-8.2" name="prebuilts_gcc_linux-x86_aarch64_aarch-linux-gnu-8.2" remote="gitlab" />
-  <project path="prebuilts/clang/host/linux-x86" name="AquariOS/prebuilts_clang_host_linux-x86" groups="pdk" clone-depth="1" remote="gitlab" />
+  <project path="prebuilts/clang/host/linux-x86" name="prebuilts_clang_host_linux-x86" groups="pdk" clone-depth="1" remote="gitlab" />
 
 <!-- System -->
   <project path="system/bt" name="system_bt" remote="aqua" />
