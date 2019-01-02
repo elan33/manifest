@@ -41,7 +41,8 @@
   <project path="bionic" name="bionic" remote="aqua" />
 
 <!-- Device -->
-  <project path="device/generic/goldfish" name="Aqua-Devices/device_generic_goldfish" groups="pdk" remote="github" />
+  <project path="device/generic/goldfish" name="Aqua-Devices/device_generic_goldfish" groups="pdk" remote="github" revision="a9-caf" />
+  <project path="device/generic/common" name="Aqua-Devices/device_generic_common" groups="pdk" remote="github" revision="a9-caf" />
   <project path="device/aquarios/sepolicy" name="device_aquarios_sepolicy" remote="aqua" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="aqua" />
 
