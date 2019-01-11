@@ -7,7 +7,7 @@
            fetch="https://gitlab.com/AquariOS" />
 
   <remote  name="aqua"
-           fetch="git+ssh://git@github.com/AquariOS" />
+           fetch="https://github.com/AquariOS" />
 
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
