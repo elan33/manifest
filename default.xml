@@ -108,6 +108,7 @@
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" groups="pdk-fs" remote="aqua" />
   <project path="packages/apps/SmartNav" name="packages_apps_SmartNav" revision="a9" remote="aqua" />
   <project path="packages/apps/SmartNavSettings" name="packages_apps_SmartNavSettings" revision="a9" remote="aqua" />
+  <project path="packages/apps/WeatherClient" name="packages_apps_WeatherClient" groups="pdk-cw-fs,pdk-fs" remote="aqua" revision="a9" />
   <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" groups="pdk-fs" remote="aqua" />
   <project path="packages/providers/AmbientPlayHistoryProvider" name="packages_providers_AmbientPlayHistoryProvider" revision="a9" remote="aqua" />
   <project path="packages/services/BuiltInPrintService" name="packages_services_BuiltInPrintService" remote="aqua" />
