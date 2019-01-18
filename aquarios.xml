@@ -30,10 +30,10 @@
   <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="aqua" />
 
 <!-- AquariOS Nexus devices -->
-  <!--angler
+  <!--angler -->
   <project path="device/huawei/angler" name="device_huawei_angler" remote="aqua2" />
   <project path="kernel/huawei/angler" name="kernel_huawei_angler" remote="aqua2" />
-  <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="aqua2" /> -->
+  <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="aqua2" />
 
   <!-- bullhead
   <project path="device/lge/bullhead" name="device_lge_bullhead" remote="aqua2" />
@@ -49,7 +49,6 @@
   <project path="device/google/taimen" name="device_google_taimen" remote="aqua2" />
   <project path="device/google/wahoo" name="device_google_wahoo" remote="aqua2" />
   <project path="kernel/google/wahoo" name="kernel_google_wahoo" remote="aqua2" />
-  <project path="vendor/google" name="proprietary_vendor_google" groups="pdk" remote="aqua2" />
   <project path="vendor/pixelgapps" name="vendor_pixelgapps" clone-depth="1" remote="gitlab" />
   <project path="device/google/walleye" name="device_google_walleye" remote="aqua2" />
 
@@ -61,6 +60,7 @@
   <project path="frameworks/av" name="frameworks_av" remote="aqua" />
   <project path="frameworks/aquarios" name="frameworks_aquarios" remote="aqua" />
   <project path="frameworks/base" name="frameworks_base" remote="aqua" />
+  <project path="frameworks/native" name="frameworks_native" remote="aqua" />
   <project path="frameworks/support" name="frameworks_support" remote="aqua" />
 
   <!-- Packages -->
@@ -99,6 +99,7 @@
   <!-- Vendor -->
   <project path="vendor/aquarios" name="vendor_aquarios" remote="aqua" />
   <project path="vendor/assets" name="vendor_assets" remote="aqua" />
+  <project path="vendor/google" name="proprietary_vendor_google" groups="pdk" remote="aqua2" />
   <project path="vendor/support" name="vendor_support" remote="aqua" />
 
 </manifest>
