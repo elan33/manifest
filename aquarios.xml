@@ -35,10 +35,10 @@
   <project path="kernel/huawei/angler" name="kernel_huawei_angler" remote="aqua2" />
   <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="aqua2" />
 
-  <!-- bullhead
+  <!-- bullhead -->
   <project path="device/lge/bullhead" name="device_lge_bullhead" remote="aqua2" />
-  <project path="kernel/lge/bullhead" name="kernel_lge_bullhead" remote="aqua2" />
-  <project path="vendor/lge/bullhead" name="vendor_lge_bullhead" remote="aqua2" /> -->
+  <project path="device/lge/bullhead-kernel" name="device_lge_bullhead-kernel" remote="aqua2" />
+  <project path="device/lge/bullhead-vendorimage" name="device_lge_bullhead-vendorimage" remote="aqua2" />
 
   <!-- crosshatch -->
   <project path="device/google/crosshatch" name="device_google_crosshatch" groups="pdk" remote="aqua2" />
