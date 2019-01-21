@@ -79,6 +79,7 @@
   <project path="hardware/qcom/bt" name="hardware_qcom_bt" groups="qcom" revision="a9-caf-aosp" remote="aqua" />
   <project path="hardware/qcom/bt-caf" name="hardware_qcom_bt" groups="qcom"  />
   <project path="hardware/qcom/camera" name="hardware_qcom_camera" groups="qcom_camera,pdk-qcom" remote="aqua" />
+  <project path="hardware/qcom/data/ipacfg-mgr" name="hardware_qcom_data_ipacfg-mgr" />
   <project path="hardware/qcom/display" name="hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="a9-caf-aosp" remote="aqua" />
   <project path="hardware/qcom/display-caf/sdm845" name="hardware_qcom_audio" revision="a9-caf-845" remote="aqua" />
   <project path="hardware/qcom/display-caf/msm8994" name="hardware_qcom_display" revision="a9-caf-8994" remote="aqua" />
@@ -113,6 +114,7 @@
   <project path="packages/providers/AmbientPlayHistoryProvider" name="packages_providers_AmbientPlayHistoryProvider" revision="a9" remote="aqua" />
   <project path="packages/services/BuiltInPrintService" name="packages_services_BuiltInPrintService" remote="aqua" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="aqua" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" />
 
 <!-- Prebuilts -->
   <project path="prebuilts/build-tools" name="prebuilts_build-tools" groups="pdk" remote="aqua" />
@@ -139,6 +141,7 @@
   <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" remote="aqua" />
   <project path="vendor/qcom/opensource/audio" name="vendor_qcom_opensource_audio" remote="aqua" />
   <project path="vendor/qcom/opensource/cryptfs_hw" name="vendor_qcom_opensource_cryptfs_hw" remote="aqua" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="vendor_qcom_opensource_data-ipa-cfg-mgr" />
   <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="aqua" />
   <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" >
     <copyfile dest="vendor/qcom/opensource/Android.bp" src="os_pickup.bp" />
@@ -620,7 +623,6 @@
   <project path="packages/services/Car" name="platform/packages/services/Car" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="packages/services/Mms" name="platform/packages/services/Mms" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="packages/services/NetworkRecommendation" name="platform/packages/services/NetworkRecommendation" groups="pdk-fs" remote="aosp" />
-  <project path="packages/services/Telephony" name="platform/packages/services/Telephony" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" groups="pdk-fs" remote="aosp" />
   <project path="pdk" name="platform/pdk" groups="pdk" remote="aosp" />
   <project path="platform_testing" name="platform/platform_testing" groups="pdk-fs,pdk-cw-fs,cts" remote="aosp" />
