@@ -2,14 +2,14 @@
 <manifest>
 
   <remote  name="aqua"
-           revision="a9"
-           fetch="git+ssh://git@github.com/AquariOS" />
+           revision="refs/heads/a9"
+           fetch="https://github.com/AquariOS" />
   <remote  name="gitlab"
            revision="a9"
-           fetch="git+ssh://git@gitlab.com/AquariOS" />
+           fetch="https://gitlab.com/AquariOS" />
   <remote  name="aqua2"
-           revision="a9"
-           fetch="git+ssh://git@github.com/Aqua-devices" />
+           revision="refs/heads/a9"
+           fetch="https://github.com/Aqua-devices" />
 
   <project path="manifest" name="manifest" remote="aqua" />
 
