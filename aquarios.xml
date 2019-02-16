@@ -55,6 +55,7 @@
 <!-- AquariOS Main -->
   <!-- External -->
   <project path="external/selinux" name="external_selinux" groups="pdk" remote="aqua" />
+  <project path="external/google" name="external_google" remote="aqua" />
 
   <!-- Framework -->
   <project path="frameworks/av" name="frameworks_av" remote="aqua" />
